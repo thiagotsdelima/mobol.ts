@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
   },
   input: {
+    flex: 1,
     backgroundColor: '#1F1E25',
     height: 56,
     borderRadius: 5,
@@ -37,5 +38,11 @@ export const styles = StyleSheet.create({
       backgroundColor: '#31CF67',
       alignItems: 'center',
       justifyContent: 'center',
+      },
+      from: {
+        width: '100%',
+        flexDirection: 'row',
+        marginTop: 36,
+        marginBottom: 42
       }
 });
