@@ -9,6 +9,10 @@ export function Home() {
     alert("Você clicou no botão");
   }
 
+  function handleParticipantRemove(name: string)  {
+    alert(`voce clico para remover ${name}`)
+  }
+
   return (
     <View style={styles.container}> 
       <Text style={styles.eventName}>Nome do evento</Text> 
@@ -19,13 +23,12 @@ export function Home() {
         placeholder="Nome do participante"
         placeholderTextColor="#FFF"
       />
-     <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}> 
+     <TouchableOpacity style={styles.button}> 
         <Text style={styles.buttonText}>+</Text>
       </TouchableOpacity>
       </View>
-      <Participant />
-      <Participant />
-      <Participant />
+      <Participant name="thiago" onRemove={() => handleParticipantRemove("thiago")}/>
+    
     </View>
   );
 }
