@@ -8,6 +8,7 @@ export function Home() {
   function handleParticipantAdd() {
     alert("Você clicou no botão");
   }
+  
 
   function handleParticipantRemove(name: string)  {
     alert(`voce clico para remover ${name}`)
